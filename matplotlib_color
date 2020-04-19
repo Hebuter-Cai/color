@@ -1,0 +1,22 @@
+1. matplot中颜色的设置
+（1）采用RGB或者RGBA，一个元组，数值在[0, 1]之间。
+an RGB or RGBA tuple of float values in [0, 1] 
+(e.g. (0.1, 0.2, 0.5) or (0.1, 0.2, 0.5, 0.3)). RGBA is short for Red, Green, Blue, Alpha;
+（2）采用RGB或RGBA， 十六制的字符串
+a hex RGB or RGBA string (e.g., '#0F0F0F' or '#0F0F0F0F');
+（3）小数式的字符串
+a string representation of a float value in [0, 1] inclusive for gray level (e.g., '0.5');
+（4）单个字母
+a single letter string, i.e. one of {'b', 'g', 'r', 'c', 'm', 'y', 'k', 'w'};
+（5）颜色名称
+a X11/CSS4 ("html") color name, e.g. "blue";
+（6）xkcd color survey
+a name from the xkcd color survey, prefixed with 'xkcd:' (e.g., 'xkcd:sky blue');
+（7）背景参数
+a "Cn" color spec, i.e. 'C' followed by a number, 
+which is an index into the default property cycle (matplotlib.rcParams['axes.prop_cycle']); 
+the indexing is intended to occur at rendering time, and defaults to black if the cycle does not include color.
+（8）Tableau Colors
+one of {'tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple', 'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan'}
+which are the Tableau Colors from the 'tab10' categorical palette (which is the default color cycle);
+
